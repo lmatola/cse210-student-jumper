@@ -35,3 +35,4 @@ root                    (project root folder)
 ## Authors
 ---
 * Xander Newlun - xdnewlun1@byui.edu
+* Zach Robker - zrobker@byui.edu
