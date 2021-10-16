@@ -2,11 +2,11 @@
 class Puzzle_parachute:
 
     def __init__(self):
-        pass
+      pass
 
     '''draw_parachute just makes the parachute and holds its value in a string whether is complete or gone'''
 
- #def display_jumper():    
+ #def draw_parachute():    
     parachute = [" ___","/___\ ", "\   /", " \ /"]
     jumper = ["  0 "," /|\ ", " / \ "," ","^^^^^^^"]
 
