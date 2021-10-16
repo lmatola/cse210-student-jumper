@@ -53,7 +53,9 @@ class Puzzle_Parachute:
             keep_playing = False     # keep playing will equal False
 
         return keep_playing          # return keep_playing
-        
+
     def change_parachute_gone(self):
-        """This method will change the 0 to an X if the parachute is gone """
+        """This method will change the 0 to an X if the parachute is gone 
+        Args: 
+            self(change_parachut_gone):     an instace of Puzzle_Parachute"""
         self.jumper = ["  x "," /|\ ", " / \ "," ","^^^^^^^"]
