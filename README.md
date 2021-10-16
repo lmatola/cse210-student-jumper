@@ -36,3 +36,5 @@ root                    (project root folder)
 ---
 * Xander Newlun - xdnewlun1@byui.edu
 * Zach Robker - zrobker@byui.edu
+* Anita Woodford - woo18041@byui.edu
+

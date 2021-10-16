@@ -1,40 +1,59 @@
 from game.console import Console
 
-
 class Puzzle_Parachute:
 
-    def __init__(self):
+    # TO DO Define the Puzzle_Parachute class
+    """A code template for the puzzle parachute. The responsiblity of this class of
+    is to display a parachute and the jumper.
+    
+    Sterotype: 
+            Information Holder
+    
+    Attributes: 
+            parachute (list): holds the parts for the parachute
+            jumper (list): holds the parts for the jumper """
+
+    def __init__(self): 
+        """The class constructor.
+
+        Args:
+            self(Puzzle_Parachute): an instance of Puzzle_Parachute."""
+
         self.parachute = [" ___","/___\ ", "\   /", " \ /"]
         self.jumper = ["  0 "," /|\ ", " / \ "," ","^^^^^^^"]
+        
+    def draw_parachute(self):
+        """ Draws / show the parachute and the jumper and the begining of the game.
+        Args:
+            self(draw_parachute): an instance of Puzzle_Parachute.  """
 
+        for part in self.parachute: # for loops throught the parts/list in puzzle_parachute.parachute
+            print (part) # print each part or each item in the list 
+        for part in self.jumper: # for loops throught the part/list in in puzzle_parachute.jumper
+            print (part) # prints each part/list in in puzzle_parachute.parachute
 
-    '''draw_parachute just makes the parachute and holds its value in a string whether is complete or gone'''
-
-
-    def draw_parachute(self):    
-        for part in self.parachute:
-            print (part)
-        for part in self.jumper:
-            print (part)
-
-
-    '''remove_parachute_piece is only called if the input of correct guess is false, 
-    it removes a part of the parachute  like in the pictures of the game.'''
     def remove_parachute_piece(self):
-        self.parachute.pop(0)
+        """ This method removes part of the parachute piece, it is only called if the input from correct_guess is false.
+        Args: 
+            self (remove_parachute_piece): an instance of Puzzle_Parachute."""
 
-    '''keep_playing is dependent on if the parachute is all gone and the head of the jumper 
-    is "x" instead of "o" like the picture. If the person died (''x") then keep playing is f
-    alse. Otherwise it is true.'''
+        self.parachute.pop(0) 
+        # self.parachute uses pop to delete from the index set to zero so start from the begining instead the end.
+
     def keep_playing(self):
-        keep_playing = True
+        """ This method is dependent on if the parachute is gone. If there are still parts of the parachute
+            the player can keep playing
+        Args: 
+            self(keep_playing):     an instace of Puzzle_Parachute
+            keep_playing(boolena):  whether or not the game can continue.
+        Returns: boolean"""
+        keep_playing = True # define boolean
 
-        if len(self.parachute) == 0:
-            keep_playing = False
+        if len(self.parachute) == 0: # if the length of Puzzle_Parachute.parchute equals zero
+            keep_playing = False     # keep playing will equal False
 
-        return keep_playing
-
-    '''remove_parachute_piece is only called if the input of correct guess is false, 
-    it removes a part of the parachute  like in the pictures of the game.'''     
+        return keep_playing          # return keep_playing
+     
     def change_parachute_gone(self):
+        """This method will change the 0 to an X if the parachute is gone """
         self.jumper = ["  x "," /|\ ", " / \ "," ","^^^^^^^"]
