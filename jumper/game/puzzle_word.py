@@ -5,9 +5,11 @@ class Puzzle_word:
 
   def __init__(self):
     self._random_word
+    self.word_list = ["cat","book","house","no"]
     
   def pick_random_word(self):
-    pass
+    random_word = random.choice(self.word_list)
+
 
 
   def draw_word_blank(self):
@@ -22,8 +24,8 @@ class Puzzle_word:
     pass
   
 #chooses random word from list pick_random_word function
-word_list = ["cat","book","house","no"]
-random_word = random.choice(word_list)
+
+
 
 #initialize variables
 user_guess = ""

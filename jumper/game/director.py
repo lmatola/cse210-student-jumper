@@ -1,6 +1,6 @@
 from game.console import Console
 from game.puzzle_parachute import Puzzle_Parachute
-#from game.puzzle_word import Puzzle_Word
+from game.puzzle_word import Puzzle_Word
 
 class Director:
     
@@ -19,7 +19,7 @@ class Director:
             self.do_outputs()
             self.get_inputs()
             self.do_updates()
-           
+            
     def do_outputs(self):
 
         self.Puzzle_word.draw_word_blank()
