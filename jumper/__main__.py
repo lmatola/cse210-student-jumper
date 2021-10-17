@@ -1,4 +1,4 @@
-from game.director import Director
+from guess import Guess
 
-director = Director()
-director.start_game()
+guess = Guess()
+guess.start_game()
