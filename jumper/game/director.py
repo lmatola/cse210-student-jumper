@@ -1,6 +1,6 @@
 from game.console import Console
-from game.puzzle_parachute import Puzzle_parachute
-from game.puzzle_word import Puzzle_word
+from game.puzzle_parachute import Puzzle_Parachute
+#from game.puzzle_word import Puzzle_Word
 
 class Director:
     
@@ -8,9 +8,9 @@ class Director:
     def __init__(self):
         
         self.Console = Console()
-        self.Puzzle_parachute = Puzzle_parachute()
+        self.Puzzle_parachute = Puzzle_Parachute()
         self.Keep_playing = True
-        self.Puzzle_word = Puzzle_word()
+        self.Puzzle_word = Puzzle_Word()
         self.User_letter = ""
         
     def start_game(self):
